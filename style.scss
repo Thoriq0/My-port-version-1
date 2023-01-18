@@ -155,9 +155,6 @@ nav h2{
     cursor: pointer;
 }
 // ANOTHER CONTENT
-.hilangAbout{
-    display: none;
-}
 .about{
     position: absolute;
     z-index: 2;
@@ -170,6 +167,7 @@ nav h2{
     box-sizing: border-box;
     border-radius: 38px;
     display: none;
+    transition: 3s all ease-in;
     .head{
         display: flex;
         justify-content: space-between;
@@ -184,9 +182,21 @@ nav h2{
         text-indent: 4rem;
     }
 }
+.va{
+    position: relative;
+    // transform: translateY(150px);
+    opacity: 0;
+    transition: 3s all ease-in-out;
+  }
+  
+  .va.active{
+    // transform: translateY(0);
+    opacity: 1;
+    animation: fade-left 1s ease-in;
+}
 // ANOTHER CONTENT
 
-// MY PROJECT
+// MY PROJECTT  
 #container-p{
     height: 1000px;
     // Header
