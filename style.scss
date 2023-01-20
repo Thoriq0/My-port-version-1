@@ -65,22 +65,22 @@ nav h2{
         margin: 75px 50% 0 50%;
         width: 64px;
         height: 40px;
-        animation-name: contoh;
-        animation-duration: 1.3s;
-        animation-iteration-count: infinite;
+        // animation-name: contoh;
+        // animation-duration: 1.3s;
+        // animation-iteration-count: infinite;
     }
 }
 // animasi Object
-@keyframes contoh{
-    0%{margin: 75px 50% 0 50%;}
-    15%{margin: 80px 50% 0 50%;}
-    25%{margin: 85px 50% 0 50%;}
-    35%{margin: 90px 50% 0 50%;}
-    50%{margin: 95px 50% 0 50%;}
-    65%{margin: 90px 50% 0 50%;}
-    75%{margin: 85px 50% 0 50%;}
-    100%{margin: 75px 50% 0 50%;}
-}
+// @keyframes contoh{
+//     0%{margin: 75px 50% 0 50%;}
+//     15%{margin: 80px 50% 0 50%;}
+//     25%{margin: 85px 50% 0 50%;}
+//     35%{margin: 90px 50% 0 50%;}
+//     50%{margin: 95px 50% 0 50%;}
+//     65%{margin: 90px 50% 0 50%;}
+//     75%{margin: 85px 50% 0 50%;}
+//     100%{margin: 75px 50% 0 50%;}
+// }
 
 
 // About Content
@@ -154,6 +154,7 @@ nav h2{
     box-shadow: 7px 10px 42px -7px rgba(0,0,0,0.59);
     cursor: pointer;
 }
+
 // ANOTHER CONTENT
 .about{
     position: absolute;
@@ -358,9 +359,40 @@ nav h2{
 }
 
 // Laptop
+@media screen and (max-width: 1280px){
+    // Another content
+    .about{
+        width: 1000px;
+        font-size: 15px;
+        left: 150px;
+    }
+
+    // content
+    #container-a{
+        .content{
+            .content-i{
+                width: 690px;
+                p{
+                    font-size: 14px;
+                }
+            }
+        ul{
+            margin: 46px 0 0 20px;
+            height: 320px;
+        }
+        }
+    }
+}
 
 // Tablet
 @media screen and (max-width: 855px){
+    // Another content
+    .about{
+        width: 700px;
+        font-size: 14px;
+        left: 100px;
+    }
+
     // Navbar
     nav{
         h2{
@@ -495,6 +527,17 @@ nav h2{
 }
 
 // Phone
+@media screen and(max-width: 500px) {
+    #container-a{
+        .content{
+            .content-i{
+                button{
+                    display: none;
+                }
+            }
+        }
+    }
+}
 @media only screen and(max-width: 430px){
     // navbar
     nav{
@@ -537,6 +580,7 @@ nav h2{
                 button{
                     font-size: 10px;
                     width: 70px;
+                    display: none;
                 }
             }
             ul{
