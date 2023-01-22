@@ -65,22 +65,28 @@ nav h2{
         margin: 75px 50% 0 50%;
         width: 64px;
         height: 40px;
-        // animation-name: contoh;
-        // animation-duration: 1.3s;
-        // animation-iteration-count: infinite;
+        animation-name: animate;
+        animation-duration: 1.3s;
+        animation-iteration-count: infinite;
     }
 }
-// animasi Object
-// @keyframes contoh{
-//     0%{margin: 75px 50% 0 50%;}
-//     15%{margin: 80px 50% 0 50%;}
-//     25%{margin: 85px 50% 0 50%;}
-//     35%{margin: 90px 50% 0 50%;}
-//     50%{margin: 95px 50% 0 50%;}
-//     65%{margin: 90px 50% 0 50%;}
-//     75%{margin: 85px 50% 0 50%;}
-//     100%{margin: 75px 50% 0 50%;}
-// }
+
+//animasi Object
+@keyframes animate{
+    0%{margin: 75px 50% 0 50%;}
+    15%{margin: 80px 50% 0 50%;}
+    20%{margin: 83px 50% 0 50%;}
+    25%{margin: 85px 50% 0 50%;}
+    27%{margin: 88px 50% 0 50%;}
+    35%{margin: 90px 50% 0 50%;}
+    40%{margin: 93px 50% 0 50%;}
+    50%{margin: 95px 50% 0 50%;}
+    58%{margin: 93px 50% 0 50%;}
+    65%{margin: 90px 50% 0 50%;}
+    70%{margin: 87px 50% 0 50%;}
+    75%{margin: 85px 50% 0 50%;}
+    100%{margin: 75px 50% 0 50%;}
+}
 
 
 // About Content
@@ -152,7 +158,6 @@ nav h2{
     text-transform: capitalize;
     margin-top: 20px;
     box-shadow: 7px 10px 42px -7px rgba(0,0,0,0.59);
-    cursor: pointer;
 }
 
 // ANOTHER CONTENT

@@ -46,7 +46,7 @@ function reveal() {
     }
   }
   
-  window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", reveal);
 document.querySelector("#container-h").addEventListener('mouseover', ()=>{
     document.querySelector(".about").style.display="none";
 })
