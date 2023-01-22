@@ -63,24 +63,24 @@ nav h2{
 
     object{
         margin: 75px 50% 0 50%;
-        width: 50px;
+        width: 64px;
         height: 40px;
-        animation-name: contoh;
-        animation-duration: 1.3s;
-        animation-iteration-count: infinite;
+        // animation-name: contoh;
+        // animation-duration: 1.3s;
+        // animation-iteration-count: infinite;
     }
 }
 // animasi Object
-@keyframes contoh{
-    0%{margin: 75px 50% 0 50%;}
-    15%{margin: 80px 50% 0 50%;}
-    25%{margin: 85px 50% 0 50%;}
-    35%{margin: 90px 50% 0 50%;}
-    50%{margin: 95px 50% 0 50%;}
-    65%{margin: 90px 50% 0 50%;}
-    75%{margin: 85px 50% 0 50%;}
-    100%{margin: 75px 50% 0 50%;}
-}
+// @keyframes contoh{
+//     0%{margin: 75px 50% 0 50%;}
+//     15%{margin: 80px 50% 0 50%;}
+//     25%{margin: 85px 50% 0 50%;}
+//     35%{margin: 90px 50% 0 50%;}
+//     50%{margin: 95px 50% 0 50%;}
+//     65%{margin: 90px 50% 0 50%;}
+//     75%{margin: 85px 50% 0 50%;}
+//     100%{margin: 75px 50% 0 50%;}
+// }
 
 
 // About Content
@@ -152,10 +152,52 @@ nav h2{
     text-transform: capitalize;
     margin-top: 20px;
     box-shadow: 7px 10px 42px -7px rgba(0,0,0,0.59);
+    cursor: pointer;
 }
 
+// ANOTHER CONTENT
+.about{
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(37, 60, 68, 0.8);
+    backdrop-filter: blur(8px);
+    top: 1100px;
+    left: 90px;
+    width: 1200px;
+    padding: 80px;
+    box-sizing: border-box;
+    border-radius: 38px;
+    display: none;
+    transition: 3s all ease-in;
+    .head{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        object{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    p{
+        text-align: justify;
+        text-indent: 4rem;
+    }
+}
+.va{
+    position: relative;
+    // transform: translateY(150px);
+    opacity: 0;
+    transition: 3s all ease-in-out;
+  }
+  
+  .va.active{
+    // transform: translateY(0);
+    opacity: 1;
+    animation: fade-left 1s ease-in;
+}
+// ANOTHER CONTENT
 
-// MY PROJECT
+// MY PROJECTT  
 #container-p{
     height: 1000px;
     // Header
@@ -317,9 +359,40 @@ nav h2{
 }
 
 // Laptop
+@media screen and (max-width: 1280px){
+    // Another content
+    .about{
+        width: 1000px;
+        font-size: 15px;
+        left: 150px;
+    }
+
+    // content
+    #container-a{
+        .content{
+            .content-i{
+                width: 690px;
+                p{
+                    font-size: 14px;
+                }
+            }
+        ul{
+            margin: 46px 0 0 20px;
+            height: 320px;
+        }
+        }
+    }
+}
 
 // Tablet
 @media screen and (max-width: 855px){
+    // Another content
+    .about{
+        width: 700px;
+        font-size: 14px;
+        left: 100px;
+    }
+
     // Navbar
     nav{
         h2{
@@ -454,6 +527,17 @@ nav h2{
 }
 
 // Phone
+@media screen and(max-width: 500px) {
+    #container-a{
+        .content{
+            .content-i{
+                button{
+                    display: none;
+                }
+            }
+        }
+    }
+}
 @media only screen and(max-width: 430px){
     // navbar
     nav{

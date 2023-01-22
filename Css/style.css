@@ -50,7 +50,7 @@ nav h2 {
 }
 #container-h object {
   margin: 75px 50% 0 50%;
-  width: 50px;
+  width: 64px;
   height: 40px;
   -webkit-animation-name: contoh;
           animation-name: contoh;
@@ -173,6 +173,48 @@ nav h2 {
   text-transform: capitalize;
   margin-top: 20px;
   box-shadow: 7px 10px 42px -7px rgba(0, 0, 0, 0.59);
+  cursor: pointer;
+}
+
+.about {
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(37, 60, 68, 0.8);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  top: 1100px;
+  left: 90px;
+  width: 1200px;
+  padding: 80px;
+  box-sizing: border-box;
+  border-radius: 38px;
+  display: none;
+  transition: 3s all ease-in;
+}
+.about .head {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+.about .head object {
+  width: 20px;
+  height: 20px;
+}
+.about p {
+  text-align: justify;
+  text-indent: 4rem;
+}
+
+.va {
+  position: relative;
+  opacity: 0;
+  transition: 3s all ease-in-out;
+}
+
+.va.active {
+  opacity: 1;
+  -webkit-animation: fade-left 1s ease-in;
+          animation: fade-left 1s ease-in;
 }
 
 #container-p {

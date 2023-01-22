@@ -5,10 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Style -->
-    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 <body>
+    <!-- For button About -->
+    <div class="about">
+        <div class="head">
+            <h1>Ahmad Thoriq</h1>
+            <object data="asset/cross.png"></object>
+        </div>
+        <br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae doloribus fugiat non inventore debitis recusandae, praesentium eligendi autem reiciendis sequi architecto quidem, illum, exercitationem ipsum provident natus sunt quam numquam placeat tempore accusantium. Assumenda veniam, vitae consectetur qui neque delectus excepturi dolore nostrum dolor veritatis reiciendis nemo aliquam dolores. Magnam optio porro sunt officia ab ut rerum non soluta perferendis cum facere beatae, sit deserunt enim iste consequatur. Hic maiores quos suscipit impedit, dolor quidem quia reiciendis officia, consectetur molestias deleniti soluta accusantium blanditiis eos, aliquid nulla commodi ipsum dignissimos! Facere eaque omnis distinctio dicta suscipit eligendi possimus ad corporis, voluptate illo quaerat cumque facilis qui nostrum enim soluta aliquid molestiae sapiente molestias! Hic harum cupiditate sapiente ab commodi sed dicta nesciunt facere autem, laboriosam quam officia, unde delectus cum eius adipisci sequi consectetur similique impedit! Laborum, tempore doloribus quis unde cum autem, vitae debitis dolorum porro, dicta sed iure voluptatum architecto repudiandae minima provident eligendi odio qui deserunt! Odio iusto ab illum officia ut nulla totam vel a beatae placeat voluptatibus officiis quos eius saepe sequi tempora aliquid, facere molestiae! Ea eaque maxime illo minima at nemo dolor cupiditate explicabo autem corporis suscipit hic, nulla incidunt in saepe unde est, molestias iusto! Blanditiis, autem temporibus. Laboriosam mollitia quaerat cumque quasi blanditiis tempore nobis perferendis ipsam ducimus eum cum ab, quisquam voluptates velit quos! Dolore est iure officia aspernatur dolores laudantium incidunt aliquid beatae quasi. Sint quam magni reiciendis pariatur alias officia eos recusandae provident neque rem nesciunt labore, esse adipisci, ea consectetur. A, quam. Mollitia fugiat ullam voluptate totam reprehenderit! Totam non sed voluptatem dolores, sunt consequuntur aperiam officiis earum mollitia repellendus esse tenetur consequatur, quaerat architecto quo? Vero, ex ad quidem aliquid dicta corrupti tempora labore quae, vitae qui doloremque est! Odio tenetur, inventore optio nulla esse quos!</p>
+        <br><br>
+        <h3>My Skills</h3>
+        <table>
+            <tr>
+                <td>
+                    <label for="file">HTML :</label>
+                </td>
+                <td>
+                    <progress id="file" value="87" max="100"> 32% </progress>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="file">CSS :</label>
+                </td>
+                <td>
+                    <progress id="file" value="73" max="100"> 32% </progress>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="file">JavaScript :</label>
+                </td>
+                <td>
+                    <progress id="file" value="68" max="100"> 32% </progress>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="file">Figma :</label>  
+                </td>
+                <td>
+                    <progress id="file" value="82" max="100"> 32% </progress>
+                </td>
+            </tr>
+        </table>
+    </div>
     <!-- Top Navbar -->
     <nav>
         <h2>portfolio</h2>
@@ -21,7 +69,7 @@
         </div>
     </div>
     <!-- About content -->
-    <div id="container-a">
+    <div id="container-a" class="va">
         <h1>about me</h1>
         <div class="content">
             <!-- 3d model -->
@@ -33,18 +81,20 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum qui quis assumenda nesciunt sapiente culpa quas hic odit nobis, sit facilis tempore labore quam?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum veniam, eum tempora, saepe velit distinctio atque sequi eligendi inventore minima voluptatibus. Doloremque facilis qui sit illum, amet beatae cumque consectetur similique vitae neque obcaecati ad.</p><br>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae consequuntur sapiente cumque, porro alias architecto sit at nostrum harum fugit consequatur quo dolor dolorem illo inventore consectetur. Error commodi voluptas, consectetur perspiciatis aperiam deleniti dolorem tenetur eos consequatur ipsum in id recusandae. Perspiciatis rerum, sit perferendis eius aspernatur maiores incidunt? Itaque saepe similique nobis molestias deserunt possimus inventore nostrum? Iure quibusdam excepturi, sapiente ipsam eius inventore sed officiis iusto exercitationem corporis dolore eaque maiores fugiat blanditiis possimus beatae perspiciatis rem, corrupti fuga eveniet. Eius, quaerat quasi obcaecati earum voluptatem quos provident repudiandae officiis aliquid, perspiciatis animi a quia ducimus?</p>
+
+                <!-- button -->
                 <button>more</button>
             </div>
             <!-- side bar -->
             <ul>
                 <li><a href="#container-a">about</a></li>
                 <li><a href="#container-p">project</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#container-c">contact</a></li>
             </ul>
         </div>
     </div>
-    <!-- Projectt-->
-    <div id="container-p">
+    <!-- Project -->
+    <div id="container-p" class="va">
         <h1>my project</h1>
         <div class="project">
             <ul>
@@ -73,12 +123,12 @@
             <ul>
                 <li><a href="#container-a">about</a></li>
                 <li><a href="#container-p">project</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#container-c">contact</a></li>
             </ul>
         </div>
     </div>
     <!-- Contact -->
-    <div id="container-c">
+    <div id="container-c" class="va">
         <h1>contact</h1>
         
         <!-- contact -->
@@ -131,6 +181,5 @@
 
     <!-- Animasi -->
     <script src="script.js"></script>
-
 </body>
 </html>
